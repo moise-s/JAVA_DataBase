@@ -5,17 +5,15 @@
 
 	<name>Archetype Project - Model</name>
 
-	<parent>
-		<groupId>es.ucm.fdi.grasia.faerie</groupId>
-		<artifactId>model-parent</artifactId>
-		<version>1.2.9</version>
-	</parent>
 
 	<groupId>test</groupId>
 	<artifactId>bora.model</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<packaging>bundle</packaging>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 
 	<repositories>
 		<repository>
@@ -27,7 +25,7 @@
 			</snapshots>
 		</repository>
 	</repositories>
-	
+
 
 	<dependencies>
 		<!-- External dependency -->
@@ -36,12 +34,12 @@
 			<artifactId>teacherFinding.model</artifactId>
 			<version>1.2.9</version>
 		</dependency>
-		
-		    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.29</version>
-    </dependency>
-		
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.29</version>
+		</dependency>
+
 	</dependencies>
 </project>

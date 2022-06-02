@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>Archetype Project - Model</name>
+
+	<parent>
+		<groupId>es.ucm.fdi.grasia.faerie</groupId>
+		<artifactId>model-parent</artifactId>
+		<version>1.2.9</version>
+	</parent>
+
+	<groupId>test</groupId>
+	<artifactId>bora.model</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<packaging>bundle</packaging>
+
+	<repositories>
+		<repository>
+			<id>sonatype-nexus-releases</id>
+			<name>Sonatype Nexus Releases</name>
+			<url>https://oss.sonatype.org/content/repositories/releases</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+
+	<dependencies>
+		<!-- External dependency -->
+		<dependency>
+			<groupId>es.ucm.fdi.grasia.faerie.demos</groupId>
+			<artifactId>teacherFinding.model</artifactId>
+			<version>1.2.9</version>
+		</dependency>
+		
+		    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.29</version>
+    </dependency>
+		
+	</dependencies>
+</project>
